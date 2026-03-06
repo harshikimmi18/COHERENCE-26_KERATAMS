@@ -1,0 +1,21 @@
+patient_id,age,gender,condition,location
+P001,45,Female,Diabetes,Hyderabad
+P002,60,Male,Hypertension,Delhi
+P003,35,Female,Asthma,Bangalore
+P004,50,Male,Cancer,Mumbai
+P005,29,Female,Healthy,Chennai
+P006,42,Male,Heart Disease,Pune
+P007,55,Female,Arthritis,Kolkata
+P008,38,Male,Obesity,Ahmedabad
+P009,47,Female,Thyroid Disorder,Jaipur
+P010,33,Male,HIV,Goa
+P011,70,Female,Hypertension,Patna
+P012,25,Male,Healthy,Visakhapatnam
+P013,58,Female,Diabetes,Surat
+P014,40,Male,Asthma,Lucknow
+P015,36,Female,Cancer,Bhopal
+P016,62,Male,Heart Disease,Indore
+P017,31,Female,Healthy,Coimbatore
+P018,49,Male,Arthritis,Nagpur
+P019,28,Female,Obesity,Trivandrum
+P020,53,Male,Thyroid Disorder,Ranchi
