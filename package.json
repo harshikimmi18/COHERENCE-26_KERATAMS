@@ -1,12 +1,24 @@
 {
-  "name": "clinical-agent",
+  "name": "clinical-trial-ai-frontend",
   "private": true,
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "frontend": "cd frontend && npm run dev",
-    "backend": "uvicorn main:app --reload",
-    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "framer-motion": "^11.0.3",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "recharts": "^2.15.4",
+    "three": "^0.161.0"
   },
   "devDependencies": {
-    "concurrently": "^9.2.1"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.4"
   }
 }
