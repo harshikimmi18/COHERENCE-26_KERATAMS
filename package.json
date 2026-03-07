@@ -1,0 +1,12 @@
+{
+  "name": "clinical-agent",
+  "private": true,
+  "scripts": {
+    "frontend": "cd frontend && npm run dev",
+    "backend": "uvicorn main:app --reload",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
