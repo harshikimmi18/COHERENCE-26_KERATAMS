@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Clinical Trial Intelligence Agent</title>
+<title>OmniMatch Clinical Trial AI</title>
 </head>
 
 <body>
 
-<div id="root"></div>
+<h1>OmniMatch Clinical Trial AI</h1>
 
-<script type="module" src="/src/main.jsx"></script>
+<p>Upload patient data to analyze trial eligibility.</p>
+
+<input type="file" id="fileInput"/>
+
+<button onclick="analyze()">Analyze Patient</button>
+
+<pre id="result"></pre>
+
+<script>
+async function analyze() {
+
+    const file = document.getElementById("fileInput").files[0];
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    const response = await fetch(
+        "https://coherence-26-keratams-1.onrender.com/analyze",
+        {
+            method: "POST",
+            body: formData
+        }
+    );
+
+    const data = await response.json();
+
+    document.getElementById("result").textContent =
+        JSON.stringify(data, null, 2);
+}
+</script>
 
 </body>
 </html>
